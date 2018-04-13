@@ -116,7 +116,7 @@ foreach($titles as $value){
 			Fax: +44-1234567891&nbsp;
 			Email:sales@sweetscomplete.com</span>
 		</div>
-	div><!-- footer -->
+	<!-- footer -->
 	
 </div><!-- wrapper -->
 

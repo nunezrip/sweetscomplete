@@ -1,3 +1,22 @@
+
+<?php
+
+require_once('./View/View.php');
+$view = new View();
+
+require_once('./Model/Members.php'); 
+$members = new Members();
+
+$maxMembers = count($members);
+$linesPerPage = 6;
+$page = (isset($_GET['page'])) ? (int) $_GET['page'] : 0;
+$prev = ($page == 0) ? 0 : $page - 1;
+$lastPage = floor($maxMembers / $linesPerPage);
+$next = ($page < $lastPage) ? $page + 1 : $page;
+
+
+?>
+
 <!DOCTYPE HTML>
 <!-- this file has the overall look and feel of the website -->
 <html>

@@ -1,8 +1,8 @@
 <?php
 
 
-Class Products {
-  public $products = array();
+Class Members {
+  public $members = array();
 
   //mysql connections params
   public $user = 'sweetscomplete';
@@ -21,18 +21,18 @@ Class Products {
     } else {
       $this->pdo = new PDO($this->dsn , $this->user, $this->pass);
     }
-     $sql = 'SELECT * FROM `products`';
+     $sql = 'SELECT * FROM `members`';
      $stmt = $this->pdo->prepare($sql);
      $stmt->execute();
 
      while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-       $this->products[] = $row;
+       $this->members[] = $row;
      }
 
 }
 
 public function getProducts() {
-  return $this->products;
+  return $this->members;
 
   }
 
