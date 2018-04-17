@@ -41,15 +41,15 @@ $email = 'someone@sweetscomplete.com';
 		</div>
 		<div class="right marT10">
 			<b>
-			<a href="login.html" >Login</a> |<a href="members.html" >Our Members</a> |<a href="cart.html" class="active" >Shopping Cart</a>
+			<a href="login.php" >Login</a> |<a href="members.php" >Our Members</a> |<a href="cart.php" class="active" >Shopping Cart</a>
 			</b>
 			<br />
 			Welcome <?php echo $name; ?></div>
 		<ul class="topmenu">
-		<li><a href="home.html">Home</a></li>
-		<li><a href="about.html">About Us</a></li>
-		<li><a href="products.html">Products</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="home.php">Home</a></li>
+		<li><a href="about.php">About Us</a></li>
+		<li><a href="products.php">Products</a></li>
+		<li><a href="contact.php">Contact Us</a></li>
 		</ul>
 		<br>
 		<div class="banner"><p></p></div>

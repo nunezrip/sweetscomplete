@@ -37,13 +37,13 @@ class View {
       $offset = $page * $linesPerPage;
       $output = '';
       for($x = 0; $x < $linesPerPage; $x++){
-        if ($x + $offset >= $maxProducts){
+        if ($x + $offset >= $maxMembers){
           break;
         }
       
         $output .= '<li>';
         $output .= '<div class="image">';
-        $output .= '<a href="detail.html">';			
+        $output .= '<a href="detail.php">';			
         $output .= '<img src="images/'
                 .  $products[$x + $offset]['link']	
                 . '.scale_20.JPG" alt="'
@@ -52,7 +52,7 @@ class View {
         $output .= '</a>';
         $output .=	'</div>';
         $output .= '<div class="detail">';
-        $output	.= '<p class="name"><a href="detail.html">'
+        $output	.= '<p class="name"><a href="detail.php">'
                 . $products[$x + $offset]['title']
                   .'</a></p>'; 
         $output .= '<p class="view><a href="detail.php">purchase</a> | <a 					    href="detail.php">view details >></a></p>';

@@ -31,7 +31,7 @@ Class Members {
 
 }
 
-public function getProducts() {
+public function getMembers() {
   return $this->members;
 
   }
